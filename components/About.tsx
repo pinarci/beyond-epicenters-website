@@ -23,7 +23,7 @@ export default function About() {
               About the Project
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Beyond Epicenters: Assessing Earthquake Vulnerability Through Economic and Social Networks is a 48-month project funded by the European Union's Horizon Europe MSCA program. Coordinated by TED University's Sustainable Trade Research Center (TEDUsTRC), the project aims to analyze the cascading effects of disasters like earthquakes and tsunamis.
+              Beyond Epicenters: Assessing Earthquake Vulnerability Through Economic and Social Networks is a 48-month project funded by the European Union&apos;s Horizon Europe MSCA program. Coordinated by TED University&apos;s Sustainable Trade Research Center (TEDUsTRC), the project aims to analyze the cascading effects of disasters like earthquakes and tsunamis.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               We go beyond assessing physical damage by focusing on the complex interdependencies across economic, social, and infrastructural networks. Through case studies from Turkey, Morocco, and Portugal, we aim to provide concrete, strategic models for policymakers.

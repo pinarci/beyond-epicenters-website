@@ -13,7 +13,7 @@ export default function Footer() {
             <div>
               <h3 className="text-xl font-bold mb-4 text-eu-blue">Beyond Epicenters</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                A Horizon Europe MSCA funded project assessing earthquake vulnerability through economic and social networks. Coordinated by TED University's Sustainable Trade Research Center (TEDUsTRC).
+                A Horizon Europe MSCA funded project assessing earthquake vulnerability through economic and social networks. Coordinated by TED University&apos;s Sustainable Trade Research Center (TEDUsTRC).
               </p>
             </div>
 
@@ -116,7 +116,7 @@ export default function Footer() {
           {/* Horizon Europe Badge */}
           <div className="mt-8 pt-8 border-t border-gray-700">
             <p className="text-center text-xs text-gray-400 mb-4">
-              This project has received funding from the European Union's Horizon Europe research and innovation programme under the Marie Skłodowska-Curie grant agreement.
+              This project has received funding from the European Union&apos;s Horizon Europe research and innovation programme under the Marie Skłodowska-Curie grant agreement.
             </p>
             <div className="flex justify-center gap-4">
               <span className="px-4 py-2 bg-eu-blue/20 border border-eu-blue/40 rounded-full text-xs text-gray-300">

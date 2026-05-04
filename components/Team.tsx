@@ -99,7 +99,7 @@ export default function Team() {
             About the Team
           </h3>
           <p className="text-gray-700 leading-relaxed">
-            Our leadership team brings together decades of combined expertise in disaster risk reduction, economic modeling, and network analysis. Based at TED University's TEDUsTAM research center, we are committed to advancing innovative approaches to understanding and mitigating earthquake vulnerability across interconnected systems.
+            Our leadership team brings together decades of combined expertise in disaster risk reduction, economic modeling, and network analysis. Based at TED University&apos;s TEDUsTRC research center, we are committed to advancing innovative approaches to understanding and mitigating earthquake vulnerability across interconnected systems.
           </p>
         </div>
       </div>
