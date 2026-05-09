@@ -90,17 +90,17 @@ export default function Consortium() {
   const [hoveredId, setHoveredId] = useState<number | null>(null)
 
   return (
-    <section id="consortium-section" className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="consortium-section" className="py-20 md:py-32 px-4 sm:px-6 lg:px-8 bg-ice-blue">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-navy mb-4">
             The Consortium & Global Network
           </h2>
-          <p className="text-xl text-gray-600 mb-4">
+          <p className="text-xl text-slate-navy/70 mb-4">
             Universities and SMEs from Portugal, Germany, Norway, Turkiye,
             Ukraine, Morocco, and Azerbaijan
           </p>
-          <div className="h-1 w-20 bg-eu-blue mx-auto"></div>
+          <div className="h-1 w-20 bg-gradient-to-r from-logo-aqua to-logo-purple mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -109,33 +109,29 @@ export default function Consortium() {
               key={partner.pic}
               onMouseEnter={() => setHoveredId(index)}
               onMouseLeave={() => setHoveredId(null)}
-              className={`relative rounded-xl p-6 transition-all duration-300 cursor-pointer transform ${
+              className={`relative overflow-hidden rounded-lg p-6 transition-all duration-300 cursor-pointer transform ${
                 index === 0
-                  ? 'md:col-span-2 bg-gradient-to-br from-eu-blue via-eu-blue to-eu-dark-blue text-white'
-                  : 'bg-white border border-gray-200 hover:border-eu-blue text-slate-navy'
+                  ? 'md:col-span-2 bg-gradient-to-br from-slate-navy via-eu-dark-blue to-logo-purple text-white'
+                  : 'bg-white border border-logo-sky/40 hover:border-logo-aqua text-slate-navy'
               } ${
                 hoveredId === index
-                  ? 'shadow-2xl scale-105'
-                  : 'shadow-lg hover:shadow-xl'
+                  ? 'shadow-2xl shadow-logo-sky/20 scale-105'
+                  : 'shadow-lg shadow-logo-sky/10 hover:shadow-xl'
               }`}
             >
-              {index !== 0 && (
-                <div className="absolute top-0 right-0 w-20 h-20 bg-eu-blue/5 rounded-full -mr-10 -mt-10"></div>
-              )}
-
               <div className="flex items-start justify-between gap-4 mb-5">
                 <div>
-                  <p className={`text-sm font-bold ${index === 0 ? 'text-blue-100' : 'text-eu-blue'}`}>
+                  <p className={`text-sm font-bold ${index === 0 ? 'text-logo-sky' : 'text-eu-dark-blue'}`}>
                     {partner.abbreviation}
                   </p>
-                  <p className={`text-xs mt-1 ${index === 0 ? 'text-blue-100' : 'text-gray-500'}`}>
+                  <p className={`text-xs mt-1 ${index === 0 ? 'text-logo-sky/80' : 'text-slate-navy/55'}`}>
                     PIC {partner.pic}
                   </p>
                 </div>
                 <span className={`text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full ${
                   index === 0
-                    ? 'bg-blue-200 text-eu-dark-blue'
-                    : 'bg-eu-blue/10 text-eu-blue'
+                    ? 'bg-logo-aqua/20 text-logo-sky border border-logo-aqua/40'
+                    : 'bg-logo-purple/10 text-logo-purple'
                 }`}>
                   {partner.role}
                 </span>
@@ -145,15 +141,15 @@ export default function Consortium() {
                 {partner.name}
               </h3>
 
-              <p className={`text-sm mb-4 ${index === 0 ? 'text-blue-100' : 'text-gray-600'}`}>
+              <p className={`text-sm mb-4 ${index === 0 ? 'text-logo-sky' : 'text-slate-navy/65'}`}>
                 {partner.country}
               </p>
 
               <div className={`transition-all duration-300 overflow-hidden ${
-                hoveredId === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                  hoveredId === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
               }`}>
                 <div className={`text-xs leading-relaxed pt-4 border-t ${
-                  index === 0 ? 'border-blue-200 text-blue-50' : 'border-gray-200 text-gray-700'
+                  index === 0 ? 'border-logo-aqua/30 text-logo-sky' : 'border-logo-sky/40 text-slate-navy/75'
                 }`}>
                   {partner.description}
                 </div>
@@ -163,21 +159,21 @@ export default function Consortium() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-          <div className="bg-white border border-gray-200 rounded-lg p-6 text-center shadow-lg">
-            <div className="text-4xl font-bold text-eu-blue mb-2">48</div>
-            <p className="text-gray-700 font-medium">Months Duration</p>
+          <div className="bg-white border border-logo-sky/40 rounded-lg p-6 text-center shadow-lg shadow-logo-sky/10">
+            <div className="text-4xl font-bold text-eu-dark-blue mb-2">48</div>
+            <p className="text-slate-navy/75 font-medium">Months Duration</p>
           </div>
-          <div className="bg-white border border-gray-200 rounded-lg p-6 text-center shadow-lg">
-            <div className="text-4xl font-bold text-eu-blue mb-2">9</div>
-            <p className="text-gray-700 font-medium">Partner Organisations</p>
+          <div className="bg-white border border-logo-sky/40 rounded-lg p-6 text-center shadow-lg shadow-logo-sky/10">
+            <div className="text-4xl font-bold text-logo-purple mb-2">9</div>
+            <p className="text-slate-navy/75 font-medium">Partner Organisations</p>
           </div>
-          <div className="bg-white border border-gray-200 rounded-lg p-6 text-center shadow-lg">
-            <div className="text-4xl font-bold text-eu-blue mb-2">7</div>
-            <p className="text-gray-700 font-medium">Countries</p>
+          <div className="bg-white border border-logo-sky/40 rounded-lg p-6 text-center shadow-lg shadow-logo-sky/10">
+            <div className="text-4xl font-bold text-logo-aqua mb-2">7</div>
+            <p className="text-slate-navy/75 font-medium">Countries</p>
           </div>
-          <div className="bg-white border border-gray-200 rounded-lg p-6 text-center shadow-lg">
-            <div className="text-4xl font-bold text-eu-blue mb-2">3</div>
-            <p className="text-gray-700 font-medium">Validation Regions</p>
+          <div className="bg-white border border-logo-sky/40 rounded-lg p-6 text-center shadow-lg shadow-logo-sky/10">
+            <div className="text-4xl font-bold text-eu-dark-blue mb-2">3</div>
+            <p className="text-slate-navy/75 font-medium">Validation Regions</p>
           </div>
         </div>
       </div>

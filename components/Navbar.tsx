@@ -24,8 +24,8 @@ export default function Navbar({ variant = 'solid' }: NavbarProps) {
   const isOverlay = variant === 'overlay'
 
   const headerClass = isOverlay
-    ? 'absolute top-0 left-0 right-0 z-50 border-b border-white/15 bg-slate-navy/55 backdrop-blur-sm'
-    : 'sticky top-0 z-50 border-b border-slate-700 bg-slate-navy shadow-lg'
+    ? 'absolute top-0 left-0 right-0 z-50 border-b border-logo-sky/20 bg-slate-navy/70 backdrop-blur-sm'
+    : 'sticky top-0 z-50 border-b border-logo-sky/15 bg-slate-navy shadow-lg'
 
   return (
     <header className={headerClass}>
@@ -47,7 +47,7 @@ export default function Navbar({ variant = 'solid' }: NavbarProps) {
               />
             </span>
             <span className="text-lg md:text-2xl font-bold text-white tracking-tight truncate">
-              Beyond <span className="text-blue-200">Epicenters</span>
+              Beyond <span className="text-logo-sky">Epicenters</span>
             </span>
           </Link>
 
@@ -62,8 +62,8 @@ export default function Navbar({ variant = 'solid' }: NavbarProps) {
                       href={link.href}
                       className={`text-sm font-semibold transition-colors ${
                         isActive
-                          ? 'text-blue-200'
-                          : 'text-white hover:text-blue-200'
+                          ? 'text-logo-aqua'
+                          : 'text-white hover:text-logo-sky'
                       }`}
                     >
                       {link.label}
@@ -76,7 +76,7 @@ export default function Navbar({ variant = 'solid' }: NavbarProps) {
 
           <button
             type="button"
-            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/30 text-white"
+            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-logo-sky/40 text-white"
             aria-label="Toggle navigation"
             aria-expanded={isOpen}
             onClick={() => setIsOpen((value) => !value)}
@@ -98,7 +98,7 @@ export default function Navbar({ variant = 'solid' }: NavbarProps) {
                       onClick={() => setIsOpen(false)}
                       className={`block rounded-lg px-4 py-3 text-sm font-semibold transition-colors ${
                         isActive
-                          ? 'bg-white/15 text-blue-100'
+                          ? 'bg-logo-aqua/15 text-logo-sky'
                           : 'text-white hover:bg-white/10'
                       }`}
                     >

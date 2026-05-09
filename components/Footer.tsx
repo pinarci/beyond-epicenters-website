@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-navy text-white">
+    <footer className="bg-ink-blue text-white">
       <div className="px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
@@ -26,22 +26,22 @@ export default function Footer() {
               <h4 className="font-semibold mb-4 text-white">Quick Links</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="/about" className="text-gray-300 hover:text-eu-blue transition-colors">
+                  <a href="/about" className="text-gray-300 hover:text-logo-aqua transition-colors">
                     About the Project
                   </a>
                 </li>
                 <li>
-                  <a href="/consortium" className="text-gray-300 hover:text-eu-blue transition-colors">
+                  <a href="/consortium" className="text-gray-300 hover:text-logo-aqua transition-colors">
                     Consortium
                   </a>
                 </li>
                 <li>
-                  <a href="/media" className="text-gray-300 hover:text-eu-blue transition-colors">
+                  <a href="/media" className="text-gray-300 hover:text-logo-aqua transition-colors">
                     Media
                   </a>
                 </li>
                 <li>
-                  <a href="/contacts" className="text-gray-300 hover:text-eu-blue transition-colors">
+                  <a href="/contacts" className="text-gray-300 hover:text-logo-aqua transition-colors">
                     Contacts
                   </a>
                 </li>
@@ -52,17 +52,17 @@ export default function Footer() {
               <h4 className="font-semibold mb-4 text-white">Resources</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="https://horizoneurope.eu" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-eu-blue transition-colors">
+                  <a href="https://horizoneurope.eu" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
                     Horizon Europe
                   </a>
                 </li>
                 <li>
-                  <a href="https://commission.europa.eu/research/participants/portal/home_en" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-eu-blue transition-colors">
+                  <a href="https://commission.europa.eu/research/participants/portal/home_en" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
                     CORDIS Portal
                   </a>
                 </li>
                 <li>
-                  <a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes/horizon-europe_en" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-eu-blue transition-colors">
+                  <a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes/horizon-europe_en" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
                     EU Research & Innovation
                   </a>
                 </li>
@@ -79,7 +79,7 @@ export default function Footer() {
                 <p>Ankara, Turkiye</p>
                 <p>
                   Email:{' '}
-                  <a href="mailto:beyondepicenters@gmail.com" className="text-eu-blue hover:underline">
+                  <a href="mailto:beyondepicenters@gmail.com" className="text-logo-aqua hover:underline">
                     beyondepicenters@gmail.com
                   </a>
                 </p>
@@ -95,13 +95,13 @@ export default function Footer() {
               Horizon Europe MSCA programme.
             </p>
             <div className="flex gap-6">
-              <a href="https://tedu.edu.tr/en/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-eu-blue transition-colors">
+              <a href="https://tedu.edu.tr/en/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-logo-aqua transition-colors">
                 Privacy Policy
               </a>
-              <a href="https://tedu.edu.tr/en/terms" target="_blank" rel="noopener noreferrer" className="hover:text-eu-blue transition-colors">
+              <a href="https://tedu.edu.tr/en/terms" target="_blank" rel="noopener noreferrer" className="hover:text-logo-aqua transition-colors">
                 Terms of Use
               </a>
-              <a href="https://tedu.edu.tr/en/accessibility" target="_blank" rel="noopener noreferrer" className="hover:text-eu-blue transition-colors">
+              <a href="https://tedu.edu.tr/en/accessibility" target="_blank" rel="noopener noreferrer" className="hover:text-logo-aqua transition-colors">
                 Accessibility
               </a>
             </div>
@@ -114,13 +114,13 @@ export default function Footer() {
               Sklodowska-Curie Actions grant agreement.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-4 py-2 bg-eu-blue/20 border border-eu-blue/40 rounded-full text-xs text-gray-300">
+              <span className="px-4 py-2 bg-logo-aqua/15 border border-logo-aqua/40 rounded-full text-xs text-gray-300">
                 Horizon Europe
               </span>
-              <span className="px-4 py-2 bg-eu-blue/20 border border-eu-blue/40 rounded-full text-xs text-gray-300">
+              <span className="px-4 py-2 bg-logo-purple/15 border border-logo-purple/40 rounded-full text-xs text-gray-300">
                 MSCA Staff Exchanges
               </span>
-              <span className="px-4 py-2 bg-eu-blue/20 border border-eu-blue/40 rounded-full text-xs text-gray-300">
+              <span className="px-4 py-2 bg-logo-sky/15 border border-logo-sky/40 rounded-full text-xs text-gray-300">
                 Grant No. 101296660
               </span>
             </div>

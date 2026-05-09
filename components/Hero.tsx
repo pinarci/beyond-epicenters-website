@@ -20,18 +20,19 @@ export default function Hero() {
           priority
           quality={100}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-navy/85 via-slate-navy/65 to-slate-navy/45"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-ink-blue/90 via-slate-navy/75 to-eu-dark-blue/45"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_35%,rgba(33,211,213,0.22),transparent_35%),radial-gradient(circle_at_35%_70%,rgba(109,72,216,0.16),transparent_32%)]"></div>
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
         <div className="flex flex-wrap gap-3 justify-center mb-8">
-          <span className="inline-block px-4 py-2 bg-eu-blue/20 border border-eu-blue/40 text-white rounded-full text-sm font-medium backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 bg-logo-aqua/15 border border-logo-aqua/40 text-white rounded-full text-sm font-medium backdrop-blur-sm">
             Horizon Europe MSCA
           </span>
-          <span className="inline-block px-4 py-2 bg-eu-blue/20 border border-eu-blue/40 text-white rounded-full text-sm font-medium backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 bg-logo-purple/20 border border-logo-purple/50 text-white rounded-full text-sm font-medium backdrop-blur-sm">
             Grant No. 101296660
           </span>
-          <span className="inline-block px-4 py-2 bg-eu-blue/20 border border-eu-blue/40 text-white rounded-full text-sm font-medium backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 bg-logo-sky/15 border border-logo-sky/45 text-white rounded-full text-sm font-medium backdrop-blur-sm">
             48-Month Project
           </span>
         </div>
@@ -51,15 +52,20 @@ export default function Hero() {
 
         <button
           onClick={scrollToAbout}
-          className="inline-block px-8 py-4 bg-eu-blue hover:bg-eu-dark-blue text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+          className="inline-block px-8 py-4 bg-gradient-to-r from-eu-blue to-logo-purple hover:from-logo-aqua hover:to-eu-dark-blue text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
         >
           Discover the Project
         </button>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <ChevronDown className="w-8 h-8 text-white" />
-      </div>
+      <button
+        type="button"
+        onClick={scrollToAbout}
+        aria-label="Scroll to About section"
+        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 animate-bounce rounded-full p-2 text-white transition-colors hover:text-logo-aqua focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-logo-aqua"
+      >
+        <ChevronDown className="w-8 h-8" aria-hidden="true" />
+      </button>
     </section>
   )
 }

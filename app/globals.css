@@ -13,8 +13,13 @@ html {
 }
 
 body {
-  background-color: #ffffff;
-  color: #1e293b;
+  background-color: #f7fbfd;
+  color: #062b3d;
+}
+
+::selection {
+  background: #21d3d5;
+  color: #041b2a;
 }
 
 /* Smooth scroll behavior */
@@ -30,14 +35,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f2fbfd;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #94a3b8;
+  background: #24bfd6;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #64748b;
+  background: #6d48d8;
 }

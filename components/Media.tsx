@@ -27,47 +27,47 @@ export default function Media() {
           <h1 className="text-4xl md:text-5xl font-bold text-slate-navy mb-4">
             Media
           </h1>
-          <p className="text-xl text-gray-600 mb-4">
+          <p className="text-xl text-slate-navy/70 mb-4">
             Project visuals, meeting materials, and communication updates
           </p>
-          <div className="h-1 w-20 bg-eu-blue mx-auto"></div>
+          <div className="h-1 w-20 bg-gradient-to-r from-logo-aqua to-logo-purple mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 shadow-lg">
-            <div className="w-12 h-12 bg-eu-blue rounded-full flex items-center justify-center mb-6">
+          <div className="bg-ice-blue border border-logo-sky/40 rounded-lg p-8 shadow-lg shadow-logo-sky/10">
+            <div className="w-12 h-12 bg-gradient-to-br from-logo-aqua to-eu-dark-blue rounded-full flex items-center justify-center mb-6">
               <FileText className="w-6 h-6 text-white" aria-hidden="true" />
             </div>
             <h2 className="text-2xl font-bold text-slate-navy mb-3">
               Kick-Off Meeting Agenda
             </h2>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-slate-navy/75 leading-relaxed">
               The kick-off agenda will be available here as a downloadable PDF
               once the final file is placed in the website assets.
             </p>
           </div>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 shadow-lg">
-            <div className="w-12 h-12 bg-eu-blue rounded-full flex items-center justify-center mb-6">
+          <div className="bg-ice-blue border border-logo-sky/40 rounded-lg p-8 shadow-lg shadow-logo-sky/10">
+            <div className="w-12 h-12 bg-gradient-to-br from-logo-aqua to-logo-purple rounded-full flex items-center justify-center mb-6">
               <ImageIcon className="w-6 h-6 text-white" aria-hidden="true" />
             </div>
             <h2 className="text-2xl font-bold text-slate-navy mb-3">
               Photo Gallery
             </h2>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-slate-navy/75 leading-relaxed">
               Photos from meetings, fieldwork, stakeholder events, and project
               activities will be collected on this page.
             </p>
           </div>
 
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 shadow-lg">
-            <div className="w-12 h-12 bg-eu-blue rounded-full flex items-center justify-center mb-6">
+          <div className="bg-ice-blue border border-logo-sky/40 rounded-lg p-8 shadow-lg shadow-logo-sky/10">
+            <div className="w-12 h-12 bg-gradient-to-br from-eu-dark-blue to-logo-purple rounded-full flex items-center justify-center mb-6">
               <Share2 className="w-6 h-6 text-white" aria-hidden="true" />
             </div>
             <h2 className="text-2xl font-bold text-slate-navy mb-3">
               Social Media
             </h2>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-slate-navy/75 leading-relaxed">
               Social media channels and dissemination updates will be added as
               the project communication plan is launched.
             </p>
@@ -78,14 +78,15 @@ export default function Media() {
           {mediaItems.map((item) => (
             <article
               key={item.title}
-              className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="bg-white border border-logo-sky/40 rounded-lg overflow-hidden shadow-lg shadow-logo-sky/10 hover:shadow-2xl hover:border-logo-aqua/70 transition-all duration-300"
             >
-              <div className="relative h-80 bg-gray-100">
+              <div className="relative h-80 bg-gradient-to-br from-slate-navy via-ink-blue to-eu-dark-blue p-3">
                 <Image
                   src={item.image}
                   alt={item.alt}
                   fill
-                  className="object-cover"
+                  className="object-contain p-3"
+                  sizes="(min-width: 768px) 33vw, 100vw"
                 />
               </div>
               <div className="p-6">

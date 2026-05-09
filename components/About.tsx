@@ -97,10 +97,10 @@ export default function About() {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-navy mb-4">
             About the Project
           </h2>
-          <p className="text-xl text-gray-600 mb-4">
+          <p className="text-xl text-slate-navy/70 mb-4">
             A systemic disaster intelligence framework for interconnected regional risks
           </p>
-          <div className="h-1 w-20 bg-eu-blue mx-auto"></div>
+          <div className="h-1 w-20 bg-gradient-to-r from-logo-aqua to-logo-purple mx-auto"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -108,49 +108,52 @@ export default function About() {
             <h3 className="text-3xl font-bold text-slate-navy mb-6">
               Project Vision
             </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-lg text-slate-navy/75 leading-relaxed mb-6">
               Beyond Epicenters aims to transform disaster risk assessment by
               moving beyond traditional epicenter-focused approaches and
               addressing the interconnected economic, social, and infrastructural
               impacts of disasters.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            <p className="text-lg text-slate-navy/75 leading-relaxed mb-6">
               By combining advanced data analytics, remote sensing, and systemic
               risk modelling, the project seeks to strengthen disaster
               resilience, improve preparedness, and support more effective
               decision-making for complex disaster scenarios across different
               regions and hazards.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-slate-navy/75 leading-relaxed">
               The methodology will be validated through seismic risk applications
               in Turkiye and Morocco, as well as tsunami risk assessments in
               Portugal.
             </p>
           </div>
 
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl bg-slate-navy">
-            <Image
-              src="/images/horizoneuropegrantawardedbeyondepicenters.jpeg"
-              alt="Horizon Europe grant awarded for Beyond Epicenters"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
-            />
+          <div className="h-96 rounded-lg overflow-hidden shadow-2xl shadow-logo-sky/20 ring-1 ring-logo-sky/30 bg-gradient-to-br from-slate-navy via-ink-blue to-eu-dark-blue p-3">
+            <div className="relative h-full w-full overflow-hidden rounded-md bg-white/5">
+              <Image
+                src="/images/horizoneuropegrantawardedbeyondepicenters.jpeg"
+                alt="Horizon Europe grant awarded for Beyond Epicenters"
+                fill
+                className="object-contain"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+              />
+            </div>
           </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {projectFacts.map((fact) => (
-            <div key={fact.label} className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-lg">
-              <p className="text-sm font-bold uppercase text-eu-blue mb-2">{fact.label}</p>
+            <div key={fact.label} className="bg-ice-blue border border-logo-sky/40 rounded-lg p-6 shadow-lg shadow-logo-sky/10">
+              <p className="text-sm font-bold uppercase text-eu-dark-blue mb-2">{fact.label}</p>
               <p className="text-lg font-semibold text-slate-navy">{fact.value}</p>
             </div>
           ))}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+          <div className="bg-ice-blue rounded-lg p-8 border border-logo-sky/40 shadow-lg shadow-logo-sky/10">
             <h3 className="text-2xl font-bold text-slate-navy mb-4">Our Idea</h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-slate-navy/75 leading-relaxed">
               Beyond Epicenters develops an innovative disaster intelligence
               framework capable of identifying cascading impacts and systemic
               vulnerabilities across interconnected regional systems. Instead of
@@ -160,15 +163,15 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+          <div className="bg-ice-blue rounded-lg p-8 border border-logo-sky/40 shadow-lg shadow-logo-sky/10">
             <h3 className="text-2xl font-bold text-slate-navy mb-4">Key Innovations</h3>
             <div className="space-y-4">
               {innovations.map((innovation) => (
                 <div key={innovation} className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-eu-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-8 h-8 bg-gradient-to-br from-logo-aqua to-logo-purple rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white font-bold text-sm">+</span>
                   </div>
-                  <p className="text-gray-700 leading-relaxed">{innovation}</p>
+                  <p className="text-slate-navy/75 leading-relaxed">{innovation}</p>
                 </div>
               ))}
             </div>
@@ -180,14 +183,14 @@ export default function About() {
             <h3 className="text-3xl font-bold text-slate-navy mb-4">
               Project Structure
             </h3>
-            <div className="h-1 w-20 bg-eu-blue mx-auto"></div>
+            <div className="h-1 w-20 bg-gradient-to-r from-logo-aqua to-logo-purple mx-auto"></div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {workPackages.map((workPackage) => (
-              <div key={workPackage.id} className="bg-white border border-gray-200 rounded-xl p-6 shadow-lg">
-                <p className="text-sm font-bold text-eu-blue mb-2">{workPackage.id}</p>
+              <div key={workPackage.id} className="bg-white border border-logo-sky/40 rounded-lg p-6 shadow-lg shadow-logo-sky/10 hover:border-logo-aqua/70 transition-colors">
+                <p className="text-sm font-bold text-logo-purple mb-2">{workPackage.id}</p>
                 <h4 className="text-xl font-bold text-slate-navy mb-4">{workPackage.title}</h4>
-                <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+                <ul className="space-y-2 text-sm text-slate-navy/75 leading-relaxed">
                   {workPackage.tasks.map((task) => (
                     <li key={task}>- {task}</li>
                   ))}
@@ -197,11 +200,11 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-slate-navy rounded-xl p-8 md:p-10 text-white">
+        <div className="bg-gradient-to-br from-slate-navy via-ink-blue to-eu-dark-blue rounded-lg p-8 md:p-10 text-white ring-1 ring-logo-sky/25">
           <h3 className="text-3xl font-bold mb-6">Deliverables</h3>
           <div className="grid md:grid-cols-2 gap-4">
             {deliverables.map((deliverable) => (
-              <p key={deliverable} className="text-gray-200 leading-relaxed">
+              <p key={deliverable} className="text-logo-sky leading-relaxed">
                 {deliverable}
               </p>
             ))}
