@@ -71,18 +71,18 @@ const partners: Partner[] = [
   {
     name: 'SETM Limited Liability Company',
     abbreviation: 'SETM',
-    role: 'Partner',
+    role: 'Associated Country',
     country: 'Azerbaijan',
     pic: '883928409',
-    description: 'SME partner contributing regional and technical implementation expertise.',
+    description: 'Associated-country organisation contributing regional and technical implementation expertise.',
   },
   {
     name: 'Universite Cadi Ayyad',
     abbreviation: 'UCAM',
-    role: 'Partner',
+    role: 'Associated Country',
     country: 'Morocco',
     pic: '998639930',
-    description: 'Partner supporting methodology validation through seismic risk applications.',
+    description: 'Associated-country university supporting methodology validation through seismic risk applications.',
   },
 ]
 
@@ -164,16 +164,16 @@ export default function Consortium() {
             <p className="text-slate-navy/75 font-medium">Months Duration</p>
           </div>
           <div className="bg-white border border-logo-sky/40 rounded-lg p-6 text-center shadow-lg shadow-logo-sky/10">
-            <div className="text-4xl font-bold text-logo-purple mb-2">9</div>
+            <div className="text-4xl font-bold text-logo-purple mb-2">7</div>
             <p className="text-slate-navy/75 font-medium">Partner Organisations</p>
           </div>
           <div className="bg-white border border-logo-sky/40 rounded-lg p-6 text-center shadow-lg shadow-logo-sky/10">
-            <div className="text-4xl font-bold text-logo-aqua mb-2">7</div>
-            <p className="text-slate-navy/75 font-medium">Countries</p>
+            <div className="text-4xl font-bold text-logo-aqua mb-2">2</div>
+            <p className="text-slate-navy/75 font-medium">Associated Countries</p>
           </div>
           <div className="bg-white border border-logo-sky/40 rounded-lg p-6 text-center shadow-lg shadow-logo-sky/10">
-            <div className="text-4xl font-bold text-eu-dark-blue mb-2">3</div>
-            <p className="text-slate-navy/75 font-medium">Validation Regions</p>
+            <div className="text-4xl font-bold text-eu-dark-blue mb-2">7</div>
+            <p className="text-slate-navy/75 font-medium">Countries</p>
           </div>
         </div>
       </div>
