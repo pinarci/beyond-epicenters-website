@@ -56,18 +56,23 @@ export default function Footer() {
               <h4 className="font-semibold mb-4 text-white">Resources</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="https://horizoneurope.eu" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
+                  <a href="https://cordis.europa.eu/project/id/101296660" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
+                    CORDIS Project Record
+                  </a>
+                </li>
+                <li>
+                  <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/staff-exchanges" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
+                    MSCA Staff Exchanges
+                  </a>
+                </li>
+                <li>
+                  <a href="https://commission.europa.eu/funding-and-tenders/find-funding/eu-funding-programmes/horizon-europe_en" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
                     Horizon Europe
                   </a>
                 </li>
                 <li>
-                  <a href="https://commission.europa.eu/research/participants/portal/home_en" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
-                    CORDIS Portal
-                  </a>
-                </li>
-                <li>
-                  <a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes/horizon-europe_en" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
-                    EU Research & Innovation
+                  <a href="https://www.tedu.edu.tr/en/whats-happening-tedu/horizon-europe-msca-success-ted-university" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-logo-aqua transition-colors">
+                    TEDU Announcement
                   </a>
                 </li>
               </ul>
@@ -122,22 +127,11 @@ export default function Footer() {
 
           <div className="border-t border-gray-700 my-8"></div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+          <div className="text-sm text-gray-400 text-center md:text-left">
             <p>
               &copy; 2026 Beyond Epicenters Project. Funded by the European Union
               Horizon Europe MSCA programme.
             </p>
-            <div className="flex gap-6">
-              <a href="https://tedu.edu.tr/en/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-logo-aqua transition-colors">
-                Privacy Policy
-              </a>
-              <a href="https://tedu.edu.tr/en/terms" target="_blank" rel="noopener noreferrer" className="hover:text-logo-aqua transition-colors">
-                Terms of Use
-              </a>
-              <a href="https://tedu.edu.tr/en/accessibility" target="_blank" rel="noopener noreferrer" className="hover:text-logo-aqua transition-colors">
-                Accessibility
-              </a>
-            </div>
           </div>
 
           <div className="mt-8 pt-8 border-t border-gray-700">
