@@ -79,7 +79,16 @@ export default function Footer() {
                 <p>
                   <span className="font-semibold text-white">TED University</span>
                 </p>
-                <p>Sustainable Trade Research Center</p>
+                <p>
+                  <a
+                    href="https://strc.tedu.edu.tr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-logo-aqua transition-colors"
+                  >
+                    Sustainable Trade Research Center
+                  </a>
+                </p>
                 <p>Ankara, Turkiye</p>
                 <p>
                   Email:{' '}
