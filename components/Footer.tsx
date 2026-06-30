@@ -1,4 +1,8 @@
 import Image from 'next/image'
+import { Instagram, Linkedin } from 'lucide-react'
+
+const instagramUrl = 'https://www.instagram.com/beyond_epicenters/'
+const linkedInUrl = 'https://www.linkedin.com/company/beyond-epicenters/posts/?feedView=all'
 
 export default function Footer() {
   return (
@@ -83,6 +87,26 @@ export default function Footer() {
                     beyondepicenters@gmail.com
                   </a>
                 </p>
+                <div className="flex gap-3 pt-2">
+                  <a
+                    href={instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Beyond Epicenters on Instagram"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-logo-aqua/40 text-gray-300 hover:border-logo-aqua hover:text-logo-aqua transition-colors"
+                  >
+                    <Instagram className="h-4 w-4" aria-hidden="true" />
+                  </a>
+                  <a
+                    href={linkedInUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Beyond Epicenters on LinkedIn"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-logo-aqua/40 text-gray-300 hover:border-logo-aqua hover:text-logo-aqua transition-colors"
+                  >
+                    <Linkedin className="h-4 w-4" aria-hidden="true" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

@@ -1,8 +1,10 @@
-import { Building2, ExternalLink, Instagram, Mail, MapPin, Phone } from 'lucide-react'
+import { Building2, ExternalLink, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
 
 const mapQuery = 'TED University, Ziya Gokalp Cd. 48/A, 06420 Cankaya, Ankara, Turkiye'
 const googleMapsEmbedUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.790364278317!2d32.859381801554065!3d39.92370734329771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34e53cc243af7%3A0xafa8419945f5d098!2sTED%20Universitesi!5e0!3m2!1sen!2str!4v1638345179235!5m2!1sen!2str'
 const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`
+const instagramUrl = 'https://www.instagram.com/beyond_epicenters/'
+const linkedInUrl = 'https://www.linkedin.com/company/beyond-epicenters/posts/?feedView=all'
 
 const contactItems = [
   {
@@ -42,7 +44,28 @@ const contactItems = [
   {
     label: 'Social Media',
     icon: Instagram,
-    content: <span className="font-semibold text-slate-navy">Instagram</span>,
+    content: (
+      <div className="flex flex-wrap gap-3">
+        <a
+          href={instagramUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 font-semibold text-eu-dark-blue hover:text-logo-purple transition-colors"
+        >
+          <Instagram className="h-4 w-4" aria-hidden="true" />
+          Instagram
+        </a>
+        <a
+          href={linkedInUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 font-semibold text-eu-dark-blue hover:text-logo-purple transition-colors"
+        >
+          <Linkedin className="h-4 w-4" aria-hidden="true" />
+          LinkedIn
+        </a>
+      </div>
+    ),
   },
 ]
 
