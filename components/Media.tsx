@@ -54,6 +54,24 @@ const kickoffPhotos = [
   },
 ]
 
+const aguBakuPhotos = [
+  {
+    src: '/media/agu-baku/agu-baku-01.jpeg',
+    alt: 'AGU team and SETM representatives discussing laboratory equipment in Baku',
+    caption: 'Laboratory briefing with SETM representatives in Baku',
+  },
+  {
+    src: '/media/agu-baku/agu-baku-02.jpeg',
+    alt: 'AGU team visiting a radiation monitoring area with a SETM representative',
+    caption: 'Technical visit focused on monitoring infrastructure',
+  },
+  {
+    src: '/media/agu-baku/agu-baku-03.jpeg',
+    alt: 'Researchers inspecting measurement equipment during the Baku collaboration visit',
+    caption: 'Field discussion on radon monitoring and seismic risk research',
+  },
+]
+
 const mediaItems = [
   {
     title: 'Project Announcement',
@@ -129,8 +147,8 @@ export default function Media() {
               Social Media
             </h2>
             <p className="text-slate-navy/75 leading-relaxed">
-              Social media channels and dissemination updates will be added as
-              the project communication plan is launched.
+              Follow Beyond Epicenters social media channels for dissemination
+              updates, meeting highlights, and project news.
             </p>
           </div>
         </div>
@@ -227,6 +245,100 @@ export default function Media() {
                     fill
                     className="object-cover"
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-sm font-semibold leading-relaxed text-slate-navy">
+                    {photo.caption}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between mb-8">
+            <div>
+              <p className="text-sm font-bold uppercase text-eu-dark-blue">
+                Research Collaboration
+              </p>
+              <h2 className="text-3xl font-bold text-slate-navy">
+                AGU Team Launches Collaboration Activities in Baku
+              </h2>
+            </div>
+            <p className="max-w-2xl text-slate-navy/70">
+              The Beyond Epicenters consortium continues to strengthen its
+              international research network through new collaborative
+              activities in Azerbaijan.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-stretch">
+            <div className="relative min-h-[360px] overflow-hidden rounded-lg border border-logo-sky/40 bg-slate-navy shadow-2xl shadow-logo-sky/15">
+              <Image
+                src={aguBakuPhotos[0].src}
+                alt={aguBakuPhotos[0].alt}
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 54vw, 100vw"
+              />
+            </div>
+
+            <article className="rounded-lg border border-logo-sky/40 bg-ice-blue p-8 shadow-lg shadow-logo-sky/10">
+              <div className="space-y-5">
+                <div className="flex gap-4">
+                  <CalendarDays className="mt-1 h-5 w-5 flex-shrink-0 text-logo-purple" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-bold uppercase text-eu-dark-blue">Date</p>
+                    <p className="text-slate-navy/75">July 2026</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-logo-purple" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-bold uppercase text-eu-dark-blue">Location</p>
+                    <p className="text-slate-navy/75">Baku, Azerbaijan</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Users className="mt-1 h-5 w-5 flex-shrink-0 text-logo-purple" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-bold uppercase text-eu-dark-blue">Partners</p>
+                    <p className="text-slate-navy/75">AGU Team and SETM LLC</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-4 text-slate-navy/75 leading-relaxed">
+                <p>
+                  As part of the Beyond Epicenters project, the AGU Team has
+                  officially launched collaborative activities with SETM Limited
+                  Liability Company in Baku.
+                </p>
+                <p>
+                  The first meetings focused on evaluating the potential of
+                  radon gas anomalies as early earthquake warning indicators,
+                  while also advancing WP1 research on Regional Interdependency
+                  Metrics for understanding cascading seismic risk.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6 mt-6">
+            {aguBakuPhotos.slice(1).map((photo) => (
+              <article
+                key={photo.src}
+                className="overflow-hidden rounded-lg border border-logo-sky/40 bg-white shadow-lg shadow-logo-sky/10 transition-all duration-300 hover:border-logo-aqua/70 hover:shadow-2xl"
+              >
+                <div className="relative aspect-[4/3] bg-slate-navy">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 640px) 50vw, 100vw"
                   />
                 </div>
                 <div className="p-4">
