@@ -72,6 +72,44 @@ const aguBakuPhotos = [
   },
 ]
 
+const setmSecondmentPhotos = [
+  {
+    src: '/media/sonaz/setm-secondment-01.jpeg',
+    alt: 'SETM researchers from Azerbaijan standing outside Lusofona University',
+    caption: 'SETM researchers at Lusofona University in Lisbon',
+  },
+  {
+    src: '/media/sonaz/setm-secondment-02.jpeg',
+    alt: 'SETM researchers and host institution staff in a laboratory at Lusofona University',
+    caption: 'The Azerbaijan team meeting laboratory staff and researchers',
+  },
+  {
+    src: '/media/sonaz/setm-secondment-03.jpeg',
+    alt: 'SETM researcher reviewing laboratory notes during secondment activities',
+    caption: 'Orientation to laboratory workflows and research facilities',
+  },
+  {
+    src: '/media/sonaz/setm-secondment-04.jpeg',
+    alt: 'SETM researcher handling laboratory materials during the Lusofona secondment',
+    caption: 'Hands-on introduction to laboratory materials and methods',
+  },
+  {
+    src: '/media/sonaz/setm-secondment-05.jpeg',
+    alt: 'SETM secondee visiting the Lusofona University campus',
+    caption: 'Campus visit during the first days of the secondment',
+  },
+  {
+    src: '/media/sonaz/setm-secondment-06.jpg',
+    alt: 'SETM secondment team members at Lusofona University',
+    caption: 'Secondment team members at the host institution',
+  },
+  {
+    src: '/media/sonaz/setm-secondment-07.jpeg',
+    alt: 'SETM researchers in a technical laboratory space at Lusofona University',
+    caption: 'Introduction to technical staff and laboratory infrastructure',
+  },
+]
+
 const mediaItems = [
   {
     title: 'Project Announcement',
@@ -339,6 +377,110 @@ export default function Media() {
                     fill
                     className="object-cover"
                     sizes="(min-width: 640px) 50vw, 100vw"
+                  />
+                </div>
+                <div className="p-4">
+                  <p className="text-sm font-semibold leading-relaxed text-slate-navy">
+                    {photo.caption}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between mb-8">
+            <div>
+              <p className="text-sm font-bold uppercase text-eu-dark-blue">
+                Staff Exchange
+              </p>
+              <h2 className="text-3xl font-bold text-slate-navy">
+                SETM Researchers Begin Secondment at Lusofona University
+              </h2>
+            </div>
+            <p className="max-w-2xl text-slate-navy/70">
+              The Azerbaijan team has started secondment activities in Lisbon
+              through the Horizon Europe MSCA Staff Exchanges project Beyond
+              Epicenters.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-stretch">
+            <div className="relative min-h-[360px] overflow-hidden rounded-lg border border-logo-sky/40 bg-slate-navy shadow-2xl shadow-logo-sky/15">
+              <Image
+                src={setmSecondmentPhotos[0].src}
+                alt={setmSecondmentPhotos[0].alt}
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 54vw, 100vw"
+              />
+            </div>
+
+            <article className="rounded-lg border border-logo-sky/40 bg-ice-blue p-8 shadow-lg shadow-logo-sky/10">
+              <div className="space-y-5">
+                <div className="flex gap-4">
+                  <CalendarDays className="mt-1 h-5 w-5 flex-shrink-0 text-logo-purple" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-bold uppercase text-eu-dark-blue">Date</p>
+                    <p className="text-slate-navy/75">July 2026</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-logo-purple" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-bold uppercase text-eu-dark-blue">Location</p>
+                    <p className="text-slate-navy/75">Lusofona University, Lisbon, Portugal</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Users className="mt-1 h-5 w-5 flex-shrink-0 text-logo-purple" aria-hidden="true" />
+                  <div>
+                    <p className="text-sm font-bold uppercase text-eu-dark-blue">Team</p>
+                    <p className="text-slate-navy/75">Azerbaijan team, SETM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-4 text-slate-navy/75 leading-relaxed">
+                <p>
+                  The Azerbaijan team from SETM has started its secondment
+                  activities at Lusofona University within the framework of the
+                  Horizon Europe MSCA Staff Exchanges project Beyond Epicenters.
+                  The project develops innovative disaster risk assessment
+                  methodologies by integrating economic, social, and
+                  infrastructural interdependencies to improve resilience
+                  against natural hazards.
+                </p>
+                <p>
+                  During the first days of the secondment, SETM researchers
+                  became acquainted with the host institution&apos;s research
+                  infrastructure, laboratory facilities, and scientific and
+                  technical staff, laying the foundation for future
+                  collaborative research and knowledge exchange.
+                </p>
+                <p>
+                  This secondment strengthens international collaboration,
+                  supports interdisciplinary research, and promotes knowledge
+                  exchange among Beyond Epicenters consortium partners.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            {setmSecondmentPhotos.slice(1).map((photo) => (
+              <article
+                key={photo.src}
+                className="overflow-hidden rounded-lg border border-logo-sky/40 bg-white shadow-lg shadow-logo-sky/10 transition-all duration-300 hover:border-logo-aqua/70 hover:shadow-2xl"
+              >
+                <div className="relative aspect-[4/3] bg-slate-navy">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   />
                 </div>
                 <div className="p-4">
