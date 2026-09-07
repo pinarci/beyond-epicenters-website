@@ -143,8 +143,6 @@ export default function Media() {
           <div className="h-1 w-20 bg-gradient-to-r from-logo-aqua to-logo-purple mx-auto"></div>
         </div>
 
-        <MarrakechUpdate />
-
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-ice-blue border border-logo-sky/40 rounded-lg p-8 shadow-lg shadow-logo-sky/10">
             <div className="w-12 h-12 bg-gradient-to-br from-logo-aqua to-eu-dark-blue rounded-full flex items-center justify-center mb-6">
@@ -495,6 +493,8 @@ export default function Media() {
             ))}
           </div>
         </div>
+
+        <MarrakechUpdate />
 
         <div className="mb-8">
           <p className="text-sm font-bold uppercase text-eu-dark-blue">

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ArrowRight, CalendarDays, Download, MapPin, Users } from 'lucide-react'
 
 const base = '/media/marrakech-secondment'
-const title = 'Secondment activities begin in Marrakech'
+const title = 'TEDU Team Launches Collaboration Activities in Marrakech'
 const introduction = 'Beyond Epicenters Project Coordinator Prof. Nazire Nergiz Dinçer has started her secondment activities in Marrakech, Morocco, as a member of the TED University team.'
 const photos = [
   { file: 'team.jpeg', alt: 'Beyond Epicenters colleagues gathered for a group photo in the meeting room', caption: 'Connecting the TED University and University of Cadi Ayyad teams.' },
@@ -36,7 +36,7 @@ export default function MarrakechUpdate({ compact = false }: { compact?: boolean
   return (
     <article id="marrakech-secondment" aria-labelledby="marrakech-title" className="mb-20 scroll-mt-28">
       <div className="mb-8 border-b border-logo-sky/40 pb-8">
-        <p className="mb-3 text-sm font-bold uppercase tracking-widest text-eu-dark-blue">Project update · Secondment</p>
+        <p className="mb-3 text-sm font-bold uppercase tracking-widest text-eu-dark-blue">Research Collaboration</p>
         <h2 id="marrakech-title" className="max-w-4xl text-3xl font-bold leading-tight text-slate-navy md:text-4xl">{title}</h2>
         <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-navy/75">
           <span className="inline-flex items-center gap-2"><CalendarDays className="h-4 w-4 text-logo-purple" aria-hidden="true" /><time dateTime="2026-09">September 2026</time></span>
