@@ -6,7 +6,7 @@ const base = '/media/marrakech-secondment'
 const title = 'Secondment activities begin in Marrakech'
 const introduction = 'Beyond Epicenters Project Coordinator Prof. Nazire Nergiz Dinçer has started her secondment activities in Marrakech, Morocco, as a member of the TED University team.'
 const photos = [
-  { file: 'team.jpeg', alt: 'Beyond Epicenters colleagues gathered for a group photo in the meeting room', caption: 'Connecting the TED University and Moroccan teams.' },
+  { file: 'team.jpeg', alt: 'Beyond Epicenters colleagues gathered for a group photo in the meeting room', caption: 'Connecting the TED University and University of Cadi Ayyad teams.' },
   { file: 'research-meeting.jpeg', alt: 'Project research presentation and discussion around a conference table in Marrakech', caption: 'Discussing the research agenda and planned activities in Morocco.' },
   { file: 'campus.jpeg', alt: 'Three colleagues outside the Faculty of Sciences and Techniques in Marrakech', caption: 'A visit to the University Cadi Ayyad campus.' },
 ]
