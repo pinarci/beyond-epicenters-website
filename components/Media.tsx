@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import MarrakechUpdate from '@/components/MarrakechUpdate'
 import {
   CalendarDays,
   Download,
@@ -141,6 +142,8 @@ export default function Media() {
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-logo-aqua to-logo-purple mx-auto"></div>
         </div>
+
+        <MarrakechUpdate />
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-ice-blue border border-logo-sky/40 rounded-lg p-8 shadow-lg shadow-logo-sky/10">
