@@ -53,9 +53,9 @@ export default function MoulayBrahimUpdate({ compact = false }: { compact?: bool
       </div>
       <div className="grid items-start gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {photos.map((photo, index) => (
-          <figure key={photo.file} className={`overflow-hidden rounded-xl border border-logo-sky/40 bg-ice-blue ${index === 0 ? 'sm:col-span-2 lg:col-span-3' : ''}`}>
+          <figure key={photo.file} className={`overflow-hidden rounded-xl border border-logo-sky/40 bg-ice-blue ${index === 0 ? 'mx-auto w-full max-w-2xl sm:col-span-2 lg:col-span-3' : ''}`}>
             <a href={`${base}/${photo.file}`} target="_blank" rel="noopener noreferrer" aria-label={`Open photo: ${photo.caption} (new tab)`} className="block focus-visible:outline focus-visible:outline-2 focus-visible:outline-logo-purple">
-              <Image src={`${base}/${photo.file}`} alt={photo.alt} width={photo.width} height={photo.height} className="h-auto w-full" sizes={index === 0 ? '(min-width: 1280px) 1280px, 100vw' : '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw'} />
+              <Image src={`${base}/${photo.file}`} alt={photo.alt} width={photo.width} height={photo.height} className="h-auto w-full" sizes={index === 0 ? '(min-width: 768px) 672px, 100vw' : '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw'} />
             </a>
             <figcaption className="px-5 py-4 text-sm text-slate-navy/75">{photo.caption}</figcaption>
           </figure>
