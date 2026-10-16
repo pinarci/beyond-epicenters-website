@@ -7,12 +7,12 @@ const title = 'Field Visit to Moulay Brahim, Morocco'
 const introduction = 'Beyond Epicenters Project Coordinator Prof. Nazire Nergiz Dinçer conducted a field visit to Moulay Brahim, Morocco, during her secondment at Cadi Ayyad University in Marrakech.'
 const photos = [
   { file: 'moulay-brahim-03.jpeg', width: 1600, height: 960, alt: 'Prof. Nazire Nergiz Dinçer during the field visit, with buildings and a street in Moulay Brahim behind her', caption: 'Prof. Nazire Nergiz Dinçer during the field visit to Moulay Brahim.' },
-  { file: 'moulay-brahim-01.jpeg', width: 1600, height: 1294, alt: 'Street lined with buildings and a local produce shop in Moulay Brahim', caption: 'Local shops and everyday activity in Moulay Brahim.' },
-  { file: 'moulay-brahim-02.jpeg', width: 1600, height: 1200, alt: 'Hillside settlement with buildings and rows of temporary shelters in Moulay Brahim', caption: 'A view of the settlement and temporary shelters.' },
-  { file: 'moulay-brahim-04.jpeg', width: 1600, height: 1200, alt: 'Damaged building facade with a green and blue door in Moulay Brahim', caption: 'Building conditions observed during the visit.' },
-  { file: 'moulay-brahim-05.jpeg', width: 1600, height: 1200, alt: 'Buildings and rubble beside a road in the Moulay Brahim area', caption: 'Buildings and surrounding terrain in the affected area.' },
-  { file: 'moulay-brahim-06.jpeg', width: 1600, height: 1200, alt: 'Buildings beside a road and construction materials in the Moulay Brahim area', caption: 'Roadside views of the local built environment.' },
-  { file: 'moulay-brahim-07.jpeg', width: 1600, height: 734, alt: 'Panoramic view of buildings and mountain slopes in the Moulay Brahim area', caption: 'The settlement within its wider mountain landscape.' },
+  { file: 'moulay-brahim-01.jpeg', width: 1600, height: 1294, alt: 'Moulay Brahim field visit photo 1' },
+  { file: 'moulay-brahim-02.jpeg', width: 1600, height: 1200, alt: 'Moulay Brahim field visit photo 2' },
+  { file: 'moulay-brahim-04.jpeg', width: 1600, height: 1200, alt: 'Moulay Brahim field visit photo 3' },
+  { file: 'moulay-brahim-05.jpeg', width: 1600, height: 1200, alt: 'Moulay Brahim field visit photo 4' },
+  { file: 'moulay-brahim-06.jpeg', width: 1600, height: 1200, alt: 'Moulay Brahim field visit photo 5' },
+  { file: 'moulay-brahim-07.jpeg', width: 1600, height: 734, alt: 'Moulay Brahim field visit photo 6' },
 ]
 
 export default function MoulayBrahimUpdate({ compact = false }: { compact?: boolean }) {
@@ -54,10 +54,14 @@ export default function MoulayBrahimUpdate({ compact = false }: { compact?: bool
       <div className="grid items-start gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {photos.map((photo, index) => (
           <figure key={photo.file} className={`overflow-hidden rounded-xl border border-logo-sky/40 bg-ice-blue ${index === 0 ? 'mx-auto w-full max-w-2xl sm:col-span-2 lg:col-span-3' : ''}`}>
-            <a href={`${base}/${photo.file}`} target="_blank" rel="noopener noreferrer" aria-label={`Open photo: ${photo.caption} (new tab)`} className="block focus-visible:outline focus-visible:outline-2 focus-visible:outline-logo-purple">
-              <Image src={`${base}/${photo.file}`} alt={photo.alt} width={photo.width} height={photo.height} className="h-auto w-full" sizes={index === 0 ? '(min-width: 768px) 672px, 100vw' : '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw'} />
+            <a href={`${base}/${photo.file}`} target="_blank" rel="noopener noreferrer" aria-label={`Open photo: ${photo.alt} (new tab)`} className={`relative block focus-visible:outline focus-visible:outline-2 focus-visible:outline-logo-purple ${index === 0 ? '' : 'aspect-[4/3]'}`}>
+              {index === 0 ? (
+                <Image src={`${base}/${photo.file}`} alt={photo.alt} width={photo.width} height={photo.height} className="h-auto w-full" sizes="(min-width: 768px) 672px, 100vw" />
+              ) : (
+                <Image src={`${base}/${photo.file}`} alt={photo.alt} fill className="object-cover" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              )}
             </a>
-            <figcaption className="px-5 py-4 text-sm text-slate-navy/75">{photo.caption}</figcaption>
+            {index === 0 && <figcaption className="px-5 py-4 text-sm text-slate-navy/75">{lead.caption}</figcaption>}
           </figure>
         ))}
       </div>
