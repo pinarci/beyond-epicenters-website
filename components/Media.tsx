@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import MarrakechUpdate from '@/components/MarrakechUpdate'
 import MoulayBrahimUpdate from '@/components/MoulayBrahimUpdate'
+import ArchiSpaceConference from '@/components/ArchiSpaceConference'
 import {
   CalendarDays,
   Download,
@@ -497,6 +498,7 @@ export default function Media() {
 
         <MarrakechUpdate />
         <MoulayBrahimUpdate />
+        <ArchiSpaceConference />
 
         <div className="mb-8">
           <p className="text-sm font-bold uppercase text-eu-dark-blue">
