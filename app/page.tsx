@@ -3,7 +3,7 @@ import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Consortium from '@/components/Consortium'
 import Footer from '@/components/Footer'
-import ArchiSpaceConference from '@/components/ArchiSpaceConference'
+import MoroccoCaseStudyUpdate from '@/components/MoroccoCaseStudyUpdate'
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <ArchiSpaceConference compact />
+        <MoroccoCaseStudyUpdate compact />
         <Consortium />
         <Footer />
       </main>
