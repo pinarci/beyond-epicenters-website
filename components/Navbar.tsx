@@ -30,28 +30,43 @@ export default function Navbar({ variant = 'solid' }: NavbarProps) {
   return (
     <header className={headerClass}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4">
-          <Link
-            href="/"
-            className="flex items-center gap-3 min-w-0"
-            onClick={() => setIsOpen(false)}
-          >
-            <span className="relative h-12 w-16 overflow-hidden rounded-lg bg-white">
-              <Image
-                src="/images/beyond-epicenters-logo-mark-cropped.jpeg"
-                alt="Beyond Epicenters logo"
-                fill
-                className="object-cover"
-                sizes="64px"
-                priority={isOverlay}
-              />
-            </span>
-            <span className="text-lg md:text-2xl font-bold text-white tracking-tight truncate">
-              Beyond <span className="text-logo-sky">Epicenters</span>
-            </span>
-          </Link>
+        <div className="flex items-center justify-between gap-2 py-3 sm:gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <Link
+              href="/"
+              className="flex items-center gap-2 sm:gap-3"
+              onClick={() => setIsOpen(false)}
+            >
+              <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg bg-white min-[420px]:w-12 lg:h-12 lg:w-16">
+                <Image
+                  src="/images/beyond-epicenters-logo-mark-cropped.jpeg"
+                  alt="Beyond Epicenters logo"
+                  fill
+                  className="object-contain lg:object-cover"
+                  sizes="(min-width: 1024px) 64px, (min-width: 420px) 48px, 40px"
+                  priority={isOverlay}
+                />
+              </span>
+              <span className="hidden text-sm font-bold leading-tight tracking-tight text-white min-[380px]:block sm:whitespace-nowrap sm:text-lg lg:text-xl">
+                Beyond <span className="block text-logo-sky sm:inline">Epicenters</span>
+              </span>
+            </Link>
 
-          <nav aria-label="Main navigation" className="hidden md:block">
+            <div className="border-l border-logo-sky/25 pl-3 sm:pl-4">
+              <div className="rounded-lg bg-white px-1.5 py-1 sm:px-2">
+                <Image
+                  src="/images/eu-funded-en-horizontal.png"
+                  alt="Funded by the European Union"
+                  width={4125}
+                  height={919}
+                  className="h-auto w-[152px] min-[420px]:w-[168px] sm:w-48 lg:w-56"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+
+          <nav aria-label="Main navigation" className="hidden lg:block">
             <ul className="flex items-center gap-7">
               {links.map((link) => {
                 const isActive = pathname === link.href
@@ -76,7 +91,7 @@ export default function Navbar({ variant = 'solid' }: NavbarProps) {
 
           <button
             type="button"
-            className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-logo-sky/40 text-white"
+            className="lg:hidden inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-logo-sky/40 text-white"
             aria-label="Toggle navigation"
             aria-expanded={isOpen}
             onClick={() => setIsOpen((value) => !value)}
@@ -86,7 +101,7 @@ export default function Navbar({ variant = 'solid' }: NavbarProps) {
         </div>
 
         {isOpen && (
-          <nav aria-label="Mobile navigation" className="md:hidden pb-4">
+          <nav aria-label="Mobile navigation" className="lg:hidden pb-4">
             <ul className="grid gap-2">
               {links.map((link) => {
                 const isActive = pathname === link.href
