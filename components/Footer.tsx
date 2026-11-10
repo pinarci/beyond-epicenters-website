@@ -9,15 +9,39 @@ export default function Footer() {
     <footer className="bg-ink-blue text-white">
       <div className="px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <div className="max-w-7xl mx-auto">
+          <div className="mb-10 flex flex-col items-start gap-6 border-b border-gray-700 pb-10 sm:flex-row sm:items-center sm:gap-8">
+            <div className="w-72 max-w-full shrink-0 overflow-hidden rounded-lg bg-white">
+              <Image
+                src="/images/eu-funded-en.png"
+                alt="Funded by the European Union"
+                width={910}
+                height={922}
+                className="h-auto w-full"
+              />
+            </div>
+            <div className="max-w-2xl space-y-3">
+              <p className="text-sm font-semibold text-white">
+                Horizon Europe · MSCA Staff Exchanges · Grant No. 101296660
+              </p>
+              <p className="text-base leading-relaxed text-gray-200">
+                Funded by the European Union. Views and opinions expressed are
+                however those of the author(s) only and do not necessarily
+                reflect those of the European Union or the European Research
+                Executive Agency. Neither the European Union nor the granting
+                authority can be held responsible for them.
+              </p>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
-              <div className="relative w-48 h-40 rounded-lg overflow-hidden bg-slate-navy mb-4">
+              <div className="relative w-44 h-36 rounded-lg overflow-hidden bg-slate-navy mb-4">
                 <Image
                   src="/images/beyond-epicenters-full-logo-cropped.jpeg"
                   alt="Beyond Epicenters logo"
                   fill
                   className="object-cover"
-                  sizes="192px"
+                  sizes="176px"
                 />
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
@@ -125,33 +149,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="border-t border-gray-700 my-8"></div>
-
-          <div className="text-sm text-gray-400 text-center md:text-left">
-            <p>
-              &copy; 2026 Beyond Epicenters Project. Funded by the European Union
-              Horizon Europe MSCA programme.
-            </p>
-          </div>
-
-          <div className="mt-8 pt-8 border-t border-gray-700">
-            <p className="text-center text-xs text-gray-400 mb-4">
-              This project has received funding from the European Union&apos;s
-              Horizon Europe research and innovation programme under the Marie
-              Sklodowska-Curie Actions grant agreement.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-4 py-2 bg-logo-aqua/15 border border-logo-aqua/40 rounded-full text-xs text-gray-300">
-                Horizon Europe
-              </span>
-              <span className="px-4 py-2 bg-logo-purple/15 border border-logo-purple/40 rounded-full text-xs text-gray-300">
-                MSCA Staff Exchanges
-              </span>
-              <span className="px-4 py-2 bg-logo-sky/15 border border-logo-sky/40 rounded-full text-xs text-gray-300">
-                Grant No. 101296660
-              </span>
-            </div>
-          </div>
+          <p className="border-t border-gray-700 pt-8 text-center text-sm text-gray-400 md:text-left">
+            &copy; 2026 Beyond Epicenters Project.
+          </p>
         </div>
       </div>
     </footer>
