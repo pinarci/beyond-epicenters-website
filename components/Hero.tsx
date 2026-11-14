@@ -45,17 +45,23 @@ export default function Hero() {
           Assessing Earthquake Vulnerability Through Economic and Social Networks
         </p>
 
-        <p className="text-lg text-gray-300 mb-12 italic max-w-4xl mx-auto">
+        <p className="text-lg text-gray-300 mb-10 italic max-w-4xl mx-auto">
           Transforming disaster risk assessment by addressing interconnected
           economic, social, and infrastructural impacts of disasters.
         </p>
 
-        <button
-          onClick={scrollToAbout}
-          className="inline-block px-8 py-4 bg-gradient-to-r from-eu-blue to-logo-purple hover:from-logo-aqua hover:to-eu-dark-blue text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-        >
-          Discover the Project
-        </button>
+        <div>
+          <button
+            onClick={scrollToAbout}
+            className="inline-block px-8 py-4 bg-gradient-to-r from-eu-blue to-logo-purple hover:from-logo-aqua hover:to-eu-dark-blue text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            Discover the Project
+          </button>
+
+          <p className="mt-6 text-[11px] sm:text-xs text-gray-300/80 max-w-2xl mx-auto leading-relaxed px-4">
+            Views and opinions expressed are, however, those of the author(s) only and do not necessarily reflect those of the European Union or REA. Neither can be held responsible for them.
+          </p>
+        </div>
       </div>
 
       <button
