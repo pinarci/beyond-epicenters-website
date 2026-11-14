@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { ChevronDown } from 'lucide-react'
 
 export default function Hero() {
   const scrollToAbout = () => {
@@ -63,15 +62,6 @@ export default function Hero() {
           </p>
         </div>
       </div>
-
-      <button
-        type="button"
-        onClick={scrollToAbout}
-        aria-label="Scroll to About section"
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 animate-bounce rounded-full p-2 text-white transition-colors hover:text-logo-aqua focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-logo-aqua"
-      >
-        <ChevronDown className="w-8 h-8" aria-hidden="true" />
-      </button>
     </section>
   )
 }
